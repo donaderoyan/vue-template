@@ -1,6 +1,10 @@
 body{
-    font-family: $font-family-custom;
+    font-family: $font-family-custom, Avenir, Helvetica, Arial, sans-serif;
 	font-weight: 200;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: $black;
 }
 
 // transition
