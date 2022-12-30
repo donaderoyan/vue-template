@@ -16,3 +16,11 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.home{
+  @include max800px {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+</style>

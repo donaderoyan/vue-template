@@ -3,6 +3,15 @@ const path = require('path');
 const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
 module.exports = defineConfig({
   transpileDependencies: true,
+  css: {
+    loaderOptions: {
+        sass: {
+          additionalData: `
+            @import "@/scss/style.scss";
+        `,
+        },
+    },
+  },
   configureWebpack: {
     output: {
       filename: "[name].js",
